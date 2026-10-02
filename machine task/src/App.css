@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* ADD TASK */
+
+.add-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.add-section input {
+  flex: 1;
+}
+
+.add-section input,
+.add-section select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-section button {
+  background: #2563eb;
+  color: white;
+}
+
+
+/* TASK CARDS */
+
+.task-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.task-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  border-left: 5px solid #2563eb;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-card.completed {
+  background: #dcfce7;
+  border-left-color: #16a34a;
+}
+
+.task-card.completed h2 {
+  text-decoration: line-through;
+  color: #666;
+}
+
+
+
+.task-card input,
+.task-card select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.complete {
+  background: #16a34a;
+  color: white;
+}
+
+.edit {
+  background: #2563eb;
+  color: white;
+}
+
+.delete {
+  background: #dc2626;
+  color: white;
+}
+
+.save {
+  background: #16a34a;
+  color: white;
+}
+
+.cancel {
+  background: #6b7280;
+  color: white;
+}
+
